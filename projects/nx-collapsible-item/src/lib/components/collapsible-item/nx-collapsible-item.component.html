@@ -1,0 +1,31 @@
+<div>
+  <span class="itemNumber">{{ itemId }}</span>
+  <div class="filter-item">
+      <div
+          class="spoiler spoiler-title"
+          (click)="isCollapsed ? expand() : collapse()"
+      >
+          <ng-content select="collapsible-item-header" class="filter-item__header"></ng-content>
+          <div class="filter-item__controls">
+              <!-- <i
+                  *ngIf="item.canDelete"
+                  class="fa fa-trash fa-lg action-icon"
+                  (click)="item.deleteItem(item.index)"
+              ></i> -->
+              <i
+                  class="fa"
+                  [ngClass]="{ 'fa-chevron-up' : isCollapsed,
+                   'fa-chevron-down': isCollapsed }"
+              ></i>
+          </div>
+      </div>
+      <!-- name="itemForm-{{ index - 1 }}" id="item{{ index }}" -->
+      <div
+
+          [ngClass]="{collapse: isCollapsed}"
+
+      >
+          <ng-content select="collapsible-item-body" *ngIf="!isCollapsed"></ng-content>
+      </div>
+  </div>
+</div>

@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "nx-collapsible-item": [
+        "dist/nx-collapsible-item"
+      ],
+      "nx-collapsible-item/*": [
+        "dist/nx-collapsible-item/*"
+      ]
+    }
   }
 }
