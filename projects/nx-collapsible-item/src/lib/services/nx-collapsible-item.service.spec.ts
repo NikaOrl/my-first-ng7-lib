@@ -6,7 +6,9 @@ describe('NxCollapsibleItemService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: NxCollapsibleItemService = TestBed.get(NxCollapsibleItemService);
+    const service: NxCollapsibleItemService = TestBed.get(
+      NxCollapsibleItemService
+    );
     expect(service).toBeTruthy();
   });
 });

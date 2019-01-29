@@ -12,6 +12,10 @@
       "element",
       "enl",
       "kebab-case"
+    ],
+    "quotemark": [
+      true,
+      "single"
     ]
   }
 }

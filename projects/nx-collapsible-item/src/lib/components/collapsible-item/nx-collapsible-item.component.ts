@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NxCollapsibleItemComponent implements OnInit {
   public itemId: number = 0;
-  public isCollapsed:boolean = false;
+  public isCollapsed = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   collapse() {
     this.isCollapsed = true;
