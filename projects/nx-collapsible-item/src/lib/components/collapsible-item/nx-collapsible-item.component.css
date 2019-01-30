@@ -1,5 +1,6 @@
 .filter-item {
-  padding: 15px 0 15px 20px;
+  padding: 0 15px;
+  width: 40em;
 }
 
 .filter-item__header {
@@ -32,6 +33,7 @@
 
 .filter-item__controls {
   flex-shrink: 0;
+  height: 2em;
 }
 
 .filter-item .filter-item__header {
@@ -60,7 +62,12 @@
   align-items: center;
 }
 
-.spoiler-title .fa {
-  color: #666;
-  margin-right: 0;
+.chevron-up {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.icon-down {
+  transform: rotateX(180deg);
 }
