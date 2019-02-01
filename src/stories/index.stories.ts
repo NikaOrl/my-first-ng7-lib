@@ -5,10 +5,26 @@ import { linkTo } from '@storybook/addon-links';
 
 import { NxCollapsibleItemComponent } from 'nx-collapsible-item';
 
-/* storiesOf('Welcome', module).add('to Storybook', () => ({
-  component: NxCollapsibleItemComponent,
-  props: {},
-})); */
+const styles = `
+<style>
+p \{
+  font-family: sans-serif;
+  font-size: 16px;
+\}
+
+.elements-list \{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+\}
+
+.brd \{
+  border: 2px solid rgba(36, 35, 35, 0.418);
+  border-radius: 8px;
+  margin: 10px;
+ \}
+ </style>
+`;
 
 storiesOf('Nx-collapsible-item', module)
   .add('with text', () => ({
@@ -16,26 +32,21 @@ storiesOf('Nx-collapsible-item', module)
       declarations: [NxCollapsibleItemComponent],
     },
     template: `
-  <enl-nx-collapsible-item
-    *ngFor="let item of items"
-    [item]="item"
-    class="brd"
-  >
-      <collapsible-item-header>
-        <p>{{ item.id }}. {{item.name}}</p>
-      </collapsible-item-header>
-      <collapsible-item-body>
-          <p>Age: {{item.age}}</p>
-          <p>Country: {{item.country}}</p>
-          <p>Score: {{item.score}}</p>
-      </collapsible-item-body>
-  </enl-nx-collapsible-item>`
+    ${styles}
+    <span> It works </span>
+    <div class="elements-list">
+      <enl-nx-collapsible-item
+        class="brd"
+      >
+          <div collapsible-item-header>
+            <p>1. Ivan</p>
+          </div>
+          <div collapsible-item-body>
+              <p>Age: 18</p>
+              <p>Country: Ru</p>
+              <p>Score: 70</p>
+          </div>
+      </enl-nx-collapsible-item>
+    </div>
+    `
   }));
-
-/* storiesOf('Another Button', module).add('button with link to another story', () => ({
-  component: NxCollapsibleItemComponent,
-  props: {
-    text: 'Go to Welcome Story',
-    onClick: linkTo('Welcome'),
-  },
-})); */
