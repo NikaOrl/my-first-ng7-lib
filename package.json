@@ -12,7 +12,8 @@
     "build-storybook": "build-storybook",
     "build_lib": "ng build nx-collapsible-item",
     "npm_pack": "cd dist/nx-collapsible-item && npm pack && cd ../..",
-    "package": "npm run build_lib && npm run npm_pack"
+    "package": "npm run build_lib && npm run npm_pack",
+    "postinstall": "npm run package && npm i file:dist/nx-collapsible-item/nx-collapsible-item-0.0.1.tgz"
   },
   "private": true,
   "dependencies": {
