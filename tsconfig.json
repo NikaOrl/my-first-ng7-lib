@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "importHelpers": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -9,22 +10,12 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types", "./typings.d.ts"],
+    "lib": ["es2017", "dom"],
     "paths": {
-      "nx-collapsible-item": [
-        "dist/nx-collapsible-item"
-      ],
-      "nx-collapsible-item/*": [
-        "dist/nx-collapsible-item/*"
-      ]
+      "nx-collapsible-item": ["dist/nx-collapsible-item"],
+      "nx-collapsible-item/*": ["dist/nx-collapsible-item/*"]
     }
   }
 }
