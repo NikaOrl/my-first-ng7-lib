@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['nx-collapsible-item.component.css']
 })
 export class NxCollapsibleItemComponent implements OnInit {
-  @Input() item: any;
   public isCollapsed = false;
 
   constructor() {}

@@ -8,29 +8,6 @@
   margin-right: 15px;
 }
 
-.filterButtons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 15px;
-  margin-top: 24px;
-}
-
-.filter-item b {
-  font-size: 14px;
-}
-
-.filter-item .filter-pairs {
-  display: flex;
-  flex-direction: row;
-}
-
-.filter-pairs {
-  display: flex;
-  flex-grow: 1;
-}
-
 .filter-item__controls {
   flex-shrink: 0;
   height: 2em;
@@ -40,16 +17,6 @@
   width: 100%;
   flex-direction: column;
   display: flex;
-}
-
-.filter-item .filter-item__header p {
-  width: 100%;
-  word-break: break-all;
-  white-space: normal;
-}
-
-.filter-item .filter-item__header p img {
-  width: 100%;
 }
 
 .spoiler-title {
