@@ -39,22 +39,22 @@ export class AppModule {
 
 ```
 <style>
-p \{
+p {
   font-family: sans-serif;
   font-size: 16px;
-\}
+}
 
-.elements-list \{
+.elements-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-\}
+}
 
-.brd \{
+.brd {
   border: 2px solid rgba(36, 35, 35, 0.418);
   border-radius: 8px;
   margin: 10px;
- \}
+ }
  </style>
  <div class="elements-list">
   <enl-nx-collapsible-item
