@@ -33,7 +33,7 @@ p {
   font-size: 16px;
   cursor: pointer;
 }
- </style>
+</style>
 <div class="elements-list">
   <enl-nx-collapsible-item
     class="brd"
