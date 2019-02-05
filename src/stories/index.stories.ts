@@ -157,7 +157,7 @@ storiesOf('Nx-collapsible-item', module)
                   Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
                   Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante i
                 </p>
-                <button class="btn">I'm not a real button, jast an example</button>
+                <button class="btn">I'm not a real button, just an example</button>
               </div>
           </enl-nx-collapsible-item>
          </div>
@@ -200,7 +200,7 @@ storiesOf('Nx-collapsible-item', module)
                   Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
                   Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante i
                 </p>
-                <button class="btn">I'm not a real button, jast an example</button>
+                <button class="btn">I'm not a real button, just an example</button>
               </div>
               <div collapsible-item-body>
                 <p>Lorem</p>
